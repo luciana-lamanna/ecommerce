@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <script defer src="constantes.js"></script>
+    <script defer src ="funciones.js"></script>
+    <script defer src="eventos.js"></script>
+    <script defer src="interaccion.js"></script>
+    <title>Ecommerce</title>
+</head>
+<body>
+    <header>
+        <div id="marca">
+            <a title="BUY SMART" href="#productos"><img src="imagenes/marca1.jpg" alt="BUY SMART" height="120"></a>
+        </div>
+        <div>
+            <button id="btn_carrito" href="#">VER CARRITO</button>
+        </div>
+        <!-- <nav id="barra_ppal">
+            <ul class="botonera_horizontal">
+                <li><a href="#">APPLE</a></li>
+                <li><a href="#">SAMSUNG</a></li>
+                <li><a href="#">XIAOMI</a></li>
+            </ul>
+        </nav> -->
+    </header>
+
+    <section id="productos">
+        <h1>PRODUCTOS DESTACADOS</h1>
+        <div id="menu_lateral">
+            <h3>MARCAS</h3>
+            <ul class="marcas">
+                <li><button id="APPLE" onclick="Apple()">APPLE</button></li>
+                <li><button id="SAMSUNG" onclick="Samsung()">SAMSUNG</button></li>
+                <li><button id="XIAOMI"onclick="Xiaomi()">XIAOMI</button></li>
+            </ul>
+            <h3>MEMORIA INTERNA</h3>
+            <ul class="memoria">
+                <li><button id="128GB">128 GB</button></li>
+                <li><button id="256GB">256 GB</button></li>
+                <li><button id="512GB">512 GB</button></li>
+            </ul>
+            <h3>MEMORIA RAM</h3>
+            <ul class="memoria">
+                <li><button id="8GB">8 GB</button></li>
+                <li><button id="12GB">12 GB</button></li>
+                <li><button id="16GB">16 GB</button></li>
+            </ul>
+            <h3>RANGO DE PRECIO</h3>
+            <input type="range" min="100000" max="300000">
+        </div>
+    
+        <div id="cajas">
+            <div id="Iphone13ProMax">
+                <img src="imagenes/13promax.frente.jpg" alt="Iphone 13 Pro Max" height=300px>
+                <h4>Iphone 13 Pro Max</h4>
+                <button class = "Iphone13ProMax" id="1">AGREGAR</button>
+            </div>
+            <div id="SamsungS22Ultra">
+                <img src="imagenes/s22ultra.frente.jpg" alt="Samsung S22 Ultra" height=300px>
+                <h4>Samsung S22 Ultra</h4>
+                <button class = "agregar" onclick="agregarAlCarrito()">AGREGAR</button>
+            </div>
+            <div id="XiaomiMi11Lite">
+                <img src="imagenes/mi11lite.frente.jpg" alt="Xiaomi Mi11 Lite" height=300px>
+                <h4>Xiaomi Mi11 Lite</h4>
+                <button class = "agregar" onclick="agregarAlCarrito()">AGREGAR</button>
+            </div>
+            <div id="Iphone13">
+                <img src="imagenes/13.frente.jpg" alt="Iphone 13" height=300px>
+                <h4>Iphone 13</h4>
+                <button class = "agregar" onclick="agregarAlCarrito()">AGREGAR</button>
+            </div>
+            <div id="SamsungZFlip3">
+                <img src="imagenes/zflip3.frente.jpg" alt="Samsung Z Flip3" height=300px>
+                <h4>Samsung Z Flip3</h4>
+                <button class = "agregar" onclick="agregarAlCarrito()">AGREGAR</button>
+            </div>
+            <div id="XiaomiMi11Ultra">
+                <img src="imagenes/mi11ultra.frente.jpg" alt="Xiaomi Mi11 Ultra" height=300px>
+                <h4>Xiaomi Mi11 Ultra</h4>
+                <button class = "agregar" onclick="agregarAlCarrito()">AGREGAR</button>
+            </div>
+
+        </div>
+    </section>
+    <section>
+        <div class="contenedor">
+            <div class="row">
+                <!-- Elementos generados a partir del JSON -->
+                <main id="items" class="col-sm-8 row"></main>
+                <!-- Carrito -->
+                <aside class="col-sm-4">
+                    <h2>Carrito</h2>
+                    <!-- Elementos del carrito -->
+                    <ul id="carrito" class="list-group">
+
+                    </ul>
+                    <hr>
+                    <!-- Precio total -->
+                    <p class="text-right">Total: <span id="total"></span>$</p>
+                    <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
+                </aside>
+            </div>
+        </div>
+        
+    </section>
+
+    <footer></footer>
+</body>
+</html>

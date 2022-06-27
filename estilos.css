@@ -1,0 +1,150 @@
+header {
+    position: sticky;
+    background-color: #1F1F24;
+    height: 120px;
+}
+
+#marca {
+    height: 100px;
+    width: 250px;
+    float: left;
+    margin-left: 80px;
+}
+
+#btn_carrito {
+    float: right;
+    margin-top: 40px;
+    margin-right: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #D2C2B0;
+    color:#1F1F24;
+    border-radius: 20px;
+    padding: 7px;
+}
+
+#carrito:hover {
+    background-color: white;
+    color: black;
+}
+
+/* .botonera_horizontal {
+    list-style-type: none;
+}
+ul.botonera_horizontal li {
+    display: inline;
+}
+ul.botonera_horizontal li a {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    line-height: 100px;
+    width: 150px;
+    height: 50px;
+} */
+
+#productos {
+    background-color: white;
+    height: 1200px;
+    width: 1200px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-right: 490px;
+    padding-top: 20px;
+    float: right;
+}
+
+#menu_lateral {
+    background-color: #D2C2B0;
+    height: 700px;
+    width: 220px;
+    margin-left: 30px;
+    margin-top: 20px;
+    float: left;
+}
+
+h3 {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 20px;
+}
+
+h4 {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+h4:hover {
+    text-decoration: underline;
+}
+
+.agregar {
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-color: #1F1F24;
+    color: white;
+    border-radius: 20px;
+    padding: 5px;
+    display: block;
+    margin: auto;
+}
+
+.agregar:hover {
+    color: #1F1F24;
+    background-color: #D2C2B0;
+}
+
+.marcas, .memoria, .camara {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.marcas li a, .memoria li a, .camara li a {
+    text-decoration: none;
+}
+
+#cajas {
+    background-color: white;
+    height: 1000px;
+    width: 800px;
+    float: right;
+    margin-right: 100px;
+}
+
+#Iphone13ProMax, #SamsungS22Ultra, #XiaomiMi11Lite {
+    height: 300px;
+    width: 200px;
+    float: left;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+#Iphone13ProMax img, #SamsungS22Ultra img, #XiaomiMi11Lite img, #Iphone13 img, #SamsungZFlip3 img, #XiaomiMi11Ultra img {
+    display:block;
+    margin: 0px auto;
+}
+
+#Iphone13, #SamsungZFlip3, #XiaomiMi11Ultra {
+    height: 300px;
+    width: 200px;
+    float: left;
+    margin-top: 180px;
+    margin-left: 50px;
+}
+
+.carrito {
+    float: left;
+    text-align: center;
+}
+
+footer {
+    background-color: #1F1F24;
+    height: 70px;
+}
